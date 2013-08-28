@@ -1,23 +1,40 @@
 ---
-abstract: XSS
+abstract: "\"><xmp>XSS Testing"
 author:
-  - unknown
+  - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>'
 build_requires: {}
 configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112621'
+generated_by: 'Minilla/v0.6.3, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Acme-XSS
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
 provides:
   Acme::XSS:
     file: lib/Acme/XSS.pm
-    version: 0.01
+    version: 0.02
+  Acme::XSSism:
+    file: lib/Acme/XSSism.pm
 requires:
-  perl: v5.8.1
+  perl: 5.01301
 resources:
-  license: http://dev.perl.org/licenses/
-version: 0.01
+  bugtracker: https://github.com/tokuhirom/Acme-XSS/issues
+  homepage: https://github.com/tokuhirom/Acme-XSS
+  repository: git://github.com/tokuhirom/Acme-XSS.git
+version: 0.02
+x_contributors:
+  - 'tokuhirom <tokuhirom@gmail.com>'

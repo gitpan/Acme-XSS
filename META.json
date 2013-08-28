@@ -1,41 +1,71 @@
 {
-   "abstract" : "XSS",
+   "abstract" : "\"><xmp>XSS Testing",
    "author" : [
-      "unknown"
+      "Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112621",
-   "license" : [
-      "perl_5"
-   ],
+   "generated_by" : "Minilla/v0.6.3",
+   "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
    "name" : "Acme-XSS",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author"
+      ]
+   },
    "prereqs" : {
       "configure" : {
          "requires" : {
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
             "Module::Build" : "0.38"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
          }
       },
       "runtime" : {
          "requires" : {
-            "perl" : "v5.8.1"
+            "perl" : "5.01301"
          }
       }
    },
    "provides" : {
       "Acme::XSS" : {
          "file" : "lib/Acme/XSS.pm",
-         "version" : "0.01"
+         "version" : "0.02"
+      },
+      "Acme::XSSism" : {
+         "file" : "lib/Acme/XSSism.pm"
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ]
+      "bugtracker" : {
+         "web" : "https://github.com/tokuhirom/Acme-XSS/issues"
+      },
+      "homepage" : "https://github.com/tokuhirom/Acme-XSS",
+      "repository" : {
+         "url" : "git://github.com/tokuhirom/Acme-XSS.git",
+         "web" : "https://github.com/tokuhirom/Acme-XSS"
+      }
    },
-   "version" : "0.01"
+   "version" : "0.02",
+   "x_contributors" : [
+      "tokuhirom <tokuhirom@gmail.com>"
+   ]
 }
